@@ -9,17 +9,17 @@ services:
       - db
     environment:
       - DB_HOST=db
-      - DB_PORT=5432
       - DB_USER=postgres
-      - DB_PASSWORD=password
-      - DB_NAME=admin
+      - DB_PASSWORD=yourpassword
+      - DB_NAME=yourdb
+      - DB_PORT=5432
 
   db:
     image: postgres:13-alpine
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: admin
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: yourdb
     volumes:
       - db-data:/var/lib/postgresql/data
     ports:
