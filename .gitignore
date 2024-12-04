@@ -1,0 +1,29 @@
+# Binaries
+main
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Dependency directories
+vendor/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+
+# Environment files
+.env
+.env.*
+
+# Docker volumes
+db-data/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
